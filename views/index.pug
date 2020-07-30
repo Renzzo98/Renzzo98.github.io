@@ -1,0 +1,624 @@
+extends layout
+
+block layout-content
+    div.View
+        
+        // Header Section
+        include partials/header.pug
+
+
+        // Home
+        section(id="home" class="s-home page-hero target-section waypoint" data-parallax="scroll" data-image-src="/images/HugoPhotos/BG_HUGO_EDITED.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center")
+
+            div(class="overlay")
+            
+            div(class="shadow-overlay")
+
+            div(class="home-content")
+
+                div(class="row home-content__main")
+
+                    h1 Hey All, Hugo Here!
+                    h3 Software Enigneer
+
+                    div(class="home-content__buttons")
+                        a(href="#works" class="smoothscroll btn btn--stroke") Latest Projects
+                    
+                        a(href="#contact" class="smoothscroll btn btn--stroke") Contact Me
+
+                    div(id="fake_home" class="home-content__scroll")
+                        a(href="#about" class="scroll-link smoothscroll")
+                            span Scroll Down
+            
+            // End of Home-Content
+
+            ul(class="home-social")
+                li
+                    a(href="https://github.com/Renzzo98")
+                        i(class="im im-github" aria-hidden="true") <span>Github</span>
+                
+                li
+                    a(href="https://www.linkedin.com/in/hugorenzzoolcese")
+                        i(class="im im-linkedin" aria-hidden="true") <span>LinkedIn</span>
+                
+                li
+                    a(href="https://www.facebook.com/hugo.olcese.98")
+                        i(class="im im-facebook" aria-hidden="true") <span>Facebook</span>
+
+        // End of Home
+
+
+        // About
+
+        section(id="about" class="s-about target-section waypoint")
+
+            div(class="row narrow section-intro has-bottom-sep")
+                div(class="col-full text-center")
+                    h3 About
+                    h1 More About Me
+                    p(class="lead") An Recent Graduate Student of Hofstra University. I have earned Master's in Computer Science with an concentration in Mobile and Web Engineering.
+            
+
+            div(class="row about-content")
+
+                div(class="col-six tab-full left")
+                    h3 Hola, Welcome to My Site!
+
+                    p My name is Hugo Renzzo Olcese. I am a young software engineer who grew up in Long Island, NY. I was born in Lima, Peru, and moved to the States when I was about 3 years old. From my heritage and culture, I can speak both English and Spanish fluently.
+
+                    p As a recent Grad from Hofstra University, I have tons of experiences with languages, and frameworks such as Python, Javascript, Flutter, Java, NodeJS, SQL, MongoDB, HTML/CSS, PugJS, C, GoLang, and many more.
+
+                    p I had worked in many different types of projects such as developing Full-Stack Websites for clients, Mobile Apps, UI/UX Experience, and Blockchain Development with Ethereum. 
+
+                
+                div(class="col-six tab-full right")
+                    h3 Here Are My Skills:
+
+                    ul(class="skill-bars")
+                        li
+                            div(id="bar1" class="progress percent5")
+                                span 95%
+                            strong Javascript
+                        li
+                            div(id="bar2" class="progress percent5")
+                                span 92%
+                            strong Python
+                        li
+                            div(id="bar3" class="progress percent5")
+                                span 88%
+                            strong Java
+                        li
+                            div(id="bar4" class="progress percent5")
+                                span 83%
+                            strong Flutter
+                        li
+                            div(id="bar5" class="progress percent5")
+                                span 80%
+                            strong GoLang
+                        li
+                            div(id="bar6" class="progress percent5")
+                                span 77%
+                            strong SQL
+                        li
+                            div(id="bar7" class="progress percent5")
+                                span 70%
+                            strong Solidity
+                        li
+                            div(id="bar8" class="progress percent5")
+                                span 100%
+                            strong Creativity
+                    
+
+            // End of About-Content
+
+            div(class="row about-content about-content--buttons")
+                div(class="col-six tab-full left")
+                    a(href="file/Hugo Renzzo 2020.pdf" download="Resume" class="btn btn--primary full-width") Download My CV
+                
+                div(class="col-six tab-full right")
+                    a(href="#contact" class="btn full-width") Contact Me
+
+            
+            div(class="row about-content about-content--timeline")
+
+                div(class="col-full text-center")
+                    h3 My Work Experience
+                
+
+                // Colum Left
+                
+                div(class="col-six tab-full left")
+                    div(class="timeline")
+                    
+                        // Start of Timeline Block
+
+                        div(class="timeline__block")
+                            div(class="timeline__bullet")
+                            div(class="timeline__header")
+                                p(class="timeline__timeframe") August 2020 - Present
+                                h3 Blackrock
+                                h5 Financial Analyst
+                            div(class="timeline__desc")
+                                p To be Continued...
+                        
+                        // End of Timeline Block
+
+                        // Start of Timeline Block
+
+                        div(class="timeline__block")
+                            div(class="timeline__bullet")
+                            div(class="timeline__header")
+                                p(class="timeline__timeframe") September 2017 - August 2020
+                                h3 Hofstra University
+                                h5 Computer Science Tutor
+                            div(class="timeline__desc")
+                                p Tutored for 
+                                    ul
+                                        li Intro to Operating System Course
+                                        li Computer Architecture
+                                        li Alogrithm Design and Analysis
+                                        li Software Engineering
+                                        li Mobile Device Programming
+                                        li A.I
+                                        li Network Security
+                                        li Computer Science Fundamentals
+                        
+                        // End of Timeline Block
+
+
+                        // Start of Timeline Block
+
+                        div(class="timeline__block")
+                            div(class="timeline__bullet")
+                            div(class="timeline__header")
+                                p(class="timeline__timeframe") May 2019 - August 2019
+                                h3 Blackrock
+                                h5 Summer Financial Analyst
+                            div(class="timeline__desc")
+                                p Build the Frontend of the client-reporting software using Angular 5 and libraries such as ag-grid, angular material, etc.. Communicate and work efficiently with my team and other employees as I learned the basics of agile development. Developed and design front-end screens using UI and UX design principles and strategies.
+                        
+                        // End of Timeline Block
+
+
+
+                div(class="col-six tab-full right")
+                    div(class="timeline")
+                    
+
+                        // Start of Timeline Block
+
+                        div(class="timeline__block")
+                            div(class="timeline__bullet")
+                            div(class="timeline__header")
+                                p(class="timeline__timeframe") August 2018 - April 2019
+                                h3 The Coder School
+                                h5 Coder Coach
+                            div(class="timeline__desc")
+                                p Working with a wide range of different age groups of students to teach them the fundamental basics of programming. Act as many kids’ first introduction to programming and try to spark the next generation of coders. Work with multiple different languages, such as Scratch, Python, Java, etc. Promote Organization and multi-tasking skills as I work and communication with multiple different clients, both during work hours, and off-work hours. Learned amazing social skills as I work, and interact with parents, and their kids.
+                        
+                        // End of Timeline Block
+
+
+                        // Start of Timeline Block
+
+                        div(class="timeline__block")
+                            div(class="timeline__bullet")
+                            div(class="timeline__header")
+                                p(class="timeline__timeframe") September 2017 - August 2020
+                                h3 Hofstra University
+                                h5 Lead Researcher / Project Manager
+                            div(class="timeline__desc")
+                                p Building next generation of intrusion detection system by monitoring every single machine instruction on CPU! Worked with 3 other programmers on Intel PT decoder and CUDA based GPU programming. Led a group of 5 student researchers. Accomplished over 4000 times speed-up compared with default Intel decoder. Successfully captured buffer overflow attacks. Experiences with automated GDB scripting.
+                        
+                        // End of Timeline Block
+
+
+                        // Start of Timeline Block
+
+                        div(class="timeline__block")
+                            div(class="timeline__bullet")
+                            div(class="timeline__header")
+                                p(class="timeline__timeframe") September 2017 - December 2017
+                                h3 Facebook
+                                h5 Certified Cybersecurity Engineer
+                            div(class="timeline__desc")
+                                p Complete 12 weeks’ courses that require extensive hands-on exercises over 60 hacks, including SQL Injection, Cross-Site Scripting, Network Sniffing, Cookie Hijacking, Onion Routing. Experiences with Metasploit and hacked WordPress 4.1. Participants of FB/Code path of Capture the Flag Contest.
+                        
+                        // End of Timeline Block
+                        
+        // End of About Section
+
+
+        // Work Section
+
+        section(id="works" class="s-works target-section waypoint")
+
+            div(class="row narrow section-intro has-bottom-sep")
+                div(class="col-full")
+                    h3 Portfolio
+                    h1 See my Latest Projects
+
+                    p(class="lead") View all of my significant projects here. From Websites I built for clients, to Mobiles Apps I built for fun, to my Master's Thesis Project, it's all here!
+
+            
+            div(class="row masonry-wrap")
+                div(class="masonry")
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/BeatTheRegents")
+                                    img(src="" srcset="/images/project-icon/BTR-Icon.jpg 1x, /images/project-icon/BTR-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") Beat The Regents
+                                p(class="item-folio__cat") NodeJS + PugJS (StripeAPI, PassportJS)
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://the429podcast.com/")
+                                    img(src="" srcset="/images/project-icon/429Podcast-Icon.jpg 1x, /images/project-icon/429Podcast-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") The 429 Podcast
+                                p(class="item-folio__cat") My Own Podcast with 2 Buddies
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/WatchRoster")
+                                    img(src="" srcset="/images/project-icon/watchRoster-Icon.jpg 1x, /images/project-icon/watchRoster-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") watchRoster
+                                p(class="item-folio__cat") NodeJS + PugJS
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Aluthra2/Gutka")
+                                    img(src="" srcset="/images/project-icon/Gutka-Icon.jpg 1x, /images/project-icon/Gutka-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") Gutka
+                                p(class="item-folio__cat") Flutter
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://renzzo98.github.io/BYB_Dashboard/")
+                                    img(src="" srcset="/images/project-icon/BYB_Dashboard-Icon.jpg 1x, /images/project-icon/BYB_Dashboard-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") BYB_Dashboard
+                                p(class="item-folio__cat") NodeJS + PugJs
+
+                    
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/ZeroAuditClient")
+                                    img(src="" srcset="/images/project-icon/ZeroAuditClient-Icon.jpg 1x, /images/project-icon/ZeroAuditClient-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") ZeroAudit Client (Master Thesis)
+                                p(class="item-folio__cat") GoLang + Solditiy + Ethereum Blockchain
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/DailyDealRedditBot")
+                                    img(src="" srcset="/images/project-icon/DailyRedditBot-Icon.jpg 1x, /images/project-icon/DailyRedditBot-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") Daily Reddit Deals (Bot)
+                                p(class="item-folio__cat") Python (Reddit API)
+
+                    
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/SecureVote")
+                                    img(src="" srcset="/images/project-icon/SecureVote-Icon.jpg 1x, /images/project-icon/SecureVote-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") Secure Vote
+                                p(class="item-folio__cat") NodeJS + PugJs
+
+                   
+
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/TrueUniqueLyrics")
+                                    img(src="" srcset="images/project-icon/UniqueLyrics.jpg 1x, images/project-icon/UniqueLyrics@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") True Unique Lyrics
+                                p(class="item-folio__cat") Python
+
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/BLK-Hackathon-FE")
+                                    img(src="" srcset="/images/project-icon/Blackrock-Fe-Icon.jpg 1x, /images/project-icon/Blackrock-Fe-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") BLK-Hackathon-FE
+                                p(class="item-folio__cat") Angular 2 + Material
+
+
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/Cal-App")
+                                    img(src="images/project-icon/Cal-Icon.jpg" srcset="images/project-icon/Cal-Icon.jpg 1x, images/project-icon/Cal-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") Cal-App
+                                p(class="item-folio__cat") Swift
+                    
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/TweetPi")
+                                    img(src="images/project-icon/TPI-Icon.jpg" srcset="images/project-icon/TPI-Icon.jpg 1x, images/project-icon/TPI-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") Twitter Pi
+                                p(class="item-folio__cat") Python/Tweepy
+
+
+                    
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://github.com/Renzzo98/WhatTheFlip")
+                                    img(src="" srcset="images/project-icon/WTF-Icon.jpg 1x, images/project-icon/WTF-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") What the Flip
+                                p(class="item-folio__cat") Swift
+                    
+
+                    
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="http://bit.ly/FinSec-Website")
+                                    img(src="" srcset="images/project-icon/Finsec-Icon.jpg 1x, images/project-icon/Finsec-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") FinSec.com
+                                p(class="item-folio__cat") HTML/Javascript
+                    
+
+
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class="thumb-link" href="https://bit.ly/AH-HA-Repair")
+                                    img(src="" srcset="images/project-icon/AH-HA-Icon.jpg 1x, images/project-icon/AH-HA-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") AH-HA's Repair Shop
+                                p(class="item-folio__cat") HTML/Javascript
+
+
+                    
+                    // Project Tile
+
+                    div(class="masonry__brick")
+                        div(class="item-folio")
+                            // Project Photo
+
+                            div(class="item-folio__thumb")
+                                a(class=".item-folio__link" href="https://github.com/Renzzo98/Pacman")
+                                    img(class=".item-folio__photo" src="" srcset="images/project-icon/Pacman-Icon.jpg 1x, images/project-icon/Pacman-Icon@2x.jpg 2x" alt="")
+                                    span(class="shadow-overlay")
+                            
+                            // Project Text
+
+                            div(class="item-folio__text")
+                                h3(class="item-folio__title") Pac-Man
+                                p(class="item-folio__cat") Java
+
+
+                   
+
+
+        // End of Work Section
+
+
+
+        // Stats Section
+
+        section(id="stats" class="s-stats")
+            div(class="row block-1-4 block-tab-1-2 block-mob-full stats")
+
+                div(class="col-block stats__col ")
+                    div(class="stats__count") 11
+                    h4 Awards Received
+
+                div(class="col-block stats__col")
+                    div(class="stats__count") 1500
+                    h4 Cups of Coffee
+                
+                div(class="col-block stats__col stats__col--highlight")
+                    div(class="stats__upsign")
+                        a(href="#")
+                            i(class="im im-arrow-up" aria-hidden="true")
+                    div(class="stats__count") 20
+                    h4 Projects Completed
+                
+                div(class="col-block stats__col")
+                    div(class="stats__count") 6
+                    h4 Hackathon Entered
+
+
+        // End of Stats Section
+
+
+        // Contact Section
+
+        section(id="contact" class="s-contact target-section waypoint")
+
+            div(class="overlay")
+
+            div(class="row narrow section-intro")
+                div(class="col-full")
+                    h3 Contact
+                    h1 Say Hola.
+
+                    p(class="lead") Feel free to send me an message about any opportunities. I will get back to you as soon as possible. Thank you!
+            
+            div(class="row contact__main")
+
+                div(class="col-four tab-full contact__infos")
+                    h4(class="h06") Phone:
+                    p Mobile: (516) 610 - 9900
+
+                    h4(class="h06") Email:
+                    p renzzo098@gmail.com
+
+                    h4(class="h06") Located At:
+                    p Long Island, NY
+
+        // End of Contact Section
+
+
+        // Footer Section
+        include partials/footer.pug
